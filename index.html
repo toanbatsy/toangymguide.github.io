@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<!-- Website template by freewebsitetemplates.com -->
+<html>
+
+<script>
+window.alert('Welcome to my website');
+</script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+        body {
+            background-color: #333; 
+            color: white;
+						text-align: center;
+
+        }
+        label, input, button, p {
+            color: green;
+			text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Choose Your Answer</h1>
+    <form id="feedbackForm">
+        <label for="nutrition">Which is the most important nutrition for muscle growth? (Carbs, Vitamins, Protein)</label>
+        <input type="text" id="nutrition" name="nutrition" required>
+        <button type="submit">Submit</button>
+    </form>
+    <p id="result"></p>
+
+    <script>
+        document.getElementById('feedbackForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const nutrition = document.getElementById('nutrition').value.trim();
+            const result = document.getElementById('result');
+            const validNutritions = ['Carbs', 'Vitamins', 'Protein'];
+            if (nutrition === 'Protein') {
+                result.textContent = `You are right! Protein is the most important.`;
+            } else if (validNutritions.includes(nutrition)) {
+                result.textContent = `You are wrong! ${nutrition} is not the most important nutrition.`;
+            } else {
+                result.textContent = 'Please enter a valid nutrition name: Carbs, Vitamins, or Protein.';
+				}
+        });
+    </script>
+<head>
+	<meta charset="utf-8">
+	<title>Toan Gym Guide</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+
+<body>
+	<div id="header">
+		<div id="logo">
+			<a href="index.html"> <img src="images/2 (1).jpg" alt="LOGO"> </a>
+		</div>
+		<ul id="navigation">
+			<li class="active">
+				<a href="index.html">Home</a>
+			</li>
+			<li>
+				<a href="about.html">Training Style</a>
+			</li>
+			<li>
+				<a href="blog.html">Blog</a>
+			</li>
+			<li>
+				<a href="journey.html">My Journey</a>
+			</li>
+		</ul>
+	</div>
+	<div id="adbox">
+		<div>
+			<div>
+				<h1>Gym is life</h1>
+				<p>
+					I have been going to the gym for almost 2 years now. The gym was first just a place, but now it's a friend.
+				</p>
+				<p>
+					I don't train to just look good, but to feel good.				</p>
+				<p>
+					I love the gym and I want to inspire those who visit my website! <a href="https://www.youtube.com/@JeffNippard" target="_blank">Visit Channel for Training Tips</a>.
+				</p>
+				<a href="about.html" class="more">Read more!</a>
+			</div>
+		</div>
+	</div>
+	<div id="body">
+		<div id="main">
+			<h2><span>&#8220; Nothing will work unless you do &#8221;.</span></h2>
+			<p>
+				In this website, you will find training tips, things I wish I knew when I started lifting, and my journey.
+			</p>
+		</div>
+		<div id="articles">
+			<ul>
+				<li>
+					<img src="images/3 (1).jpg" alt="Img">
+					<p>
+						Tips for training for pure muscle growth.
+					</p>
+					<a href="blog.html" class="more">Read more >></a>
+				</li>
+				<li>
+					<img src="images/4 (1).jpg" alt="Img">
+					<p>
+						Love training? Read this!
+					</p>
+					<a href="blog.html" class="more">Read more >></a>
+				</li>
+				<li>
+					<img src="images/5 (1).jpg" alt="Img">
+					<p>
+						Visit site!
+					</p>
+					<a href="blog.html" class="more">Read more >></a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div id="footer">
+		<ul id="connect">
+			<li>
+				<a href="http://facebook.com/nghuu.toan123" target="_blank" class="facebook" title="Facebook"></a>
+			</li>
+			
+		</ul>
+		<div id="footnote">
+			<ul>
+				<li class="active">
+					<a href="index.html">Home</a>
+				</li>
+				<li>
+					<a href="about.html">About</a>
+				</li>
+				<li>
+					<a href="blog.html">Blog</a>
+				</li>
+				<li>
+					<a href="index.html">Gallery</a>
+				</li>
+			</ul>
+			<span>Nguyen Huu Toan 23229584</span>
+		</div>
+	</div>
+	
+
+
+</body>
+</html>
